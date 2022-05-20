@@ -6,47 +6,39 @@
 }
 
 body {
-	width: 1000px;
-	height: 1294.118px;
+    height: fit-content;
+    width: fit-content;
+    margin: 0;
     background: #aaa;
-    margin-bottom: 0;
-    overflow: scroll;
 }
 
 h1 {
     font-family: 'Open Sans';
     font-weight: 400;
-    font-size: 56px;
-    color: #2979ff;
+    font-size: 48px;
+    color: #455a64;
 }
 
 h2 {
     font-family: 'Open Sans';
     font-weight: 400;
-    font-size: 28px;
+    font-size: 22px;
     margin-top: 5px;
-    border-bottom: 3px solid #2979ff;
-    color: #2979ff;
-}
-
-.body h2 {
-    width: 620px;
-}
-
-.side h2 {
-    width: 260px;
+    width: 100%;
+    border-bottom: 2px solid #455a64;
     margin-bottom: 8px;
+    color: #455a64;
 }
 
 h3 {
     margin-top: 10px;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 h4 {
     font-weight: 600;
-    font-size: 16px;
+    font-size: 14px;
     margin-left: 1px;
 }
 
@@ -58,9 +50,13 @@ i {
     font-size: 14px;
 }
 
+.section {
+    width: 100%;
+}
+
 .title {
-    width: 1000px;
-    height: 100px;
+    width: 100%;
+    height: 65px;
     position: relative;
     background: white;
     /* border-bottom: 1px solid black; */
@@ -70,36 +66,27 @@ i {
     position: absolute;
     bottom: 0;
     left: 0;
-    padding-bottom: 5px;
-    padding-left: 36px;
 }
 
 .contact {
     position: absolute;
     bottom: 0;
     right: 0;
-    font-size: 13px;
-    padding-bottom: 10px;
-    padding-right: 40px;
+    font-size: 12px;
+    padding-bottom: 8px;
     text-align: right;
 }
 
-.body {
+.page {
+    overflow-clip-box: content-box;
     background: white;
-    width: 1000px;
-    height: 1194.11px;
+    width: 824px;
+    height: 1180.12px;
+    padding: 57px 88px;
     display: flex;
-}
-
-.main {
-    width: 680px;
-    height: 100%;
-    /* border-right: 1px solid black; */
-}
-
-.main .section {
-    padding-right: 20px;
-    padding-left: 40px;
+    flex-flow: row wrap;
+    overflow: hidden;
+    margin-bottom: auto;
 }
 
 ul {
@@ -112,45 +99,15 @@ ul {
 li {
     margin-bottom: 6px;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 13px;
 }
 
 p {
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.section p {
     margin-left: 22px;
     margin-top: 6px;
-    font-weight: 300;
-    font-size: 16px;
-}
-
-.side {
-    width: 320px;
-    padding-left: 20px;
-    height: auto;
-}
-
-.side p {
-    margin-top: 5px;
-    line-height: 17px;
-    font-weight: 300;
-    font-size: 13px;
-    padding-right: 40px;
-    margin-bottom: 16px;
-}
-
-.side a {
-    padding-left: 22px;
-    display: block;
-    color: black;
-}
-
-.side ul {
-    list-style-type: none;
-    list-style-image: none;
-    margin-right: 40px;
-    margin-top: 5px;
-}
-
-.side li {
-    font-size: 13px;
-    margin-bottom: 0;
 }
